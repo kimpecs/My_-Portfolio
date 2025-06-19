@@ -1,45 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kimberly Pecco | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kimberly Pecco | Aspiring Cybersecurity & Full-Stack Developer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Kimberly Pecco</h1>
-    <p>Computer Science & Management Graduate | Data & Software Enthusiast</p>
+    <div class="profile-header">
+      <img src="assets/kimberly.jpg" alt="Kimberly Pecco" class="profile-pic">
+      <div>
+        <h1>Kimberly Pecco</h1>
+        <p>Junior Cybersecurity Analyst | Full-Stack Developer</p>
+        <p>CHIPA Candidate | Python & R Expert | Vue & Flask Specialist</p>
+      </div>
+    </div>
+    <nav>
+      | <a href="#projects">Projects</a> |
+      <a href="#skills">Skills</a> |
+      <a href="#experience">Experience</a> |
+      <a href="#contact">Contact</a> |
+    </nav>
   </header>
 
-  <section class="portfolio">
-    <h2>Featured Projects</h2>
-    <ul class="project-list">
-      <li>
-        <a href="projects/fraud-detector.html">
-          <strong>Fraud Detector</strong> – Machine learning model for anomaly detection using Isolation Forest.
-        </a>
-      </li>
-      <li>
-        <a href="projects/carnival-ecommerce.html">
-          <strong>Carnival E-commerce</strong> – Full-stack Vue + Flask app for event management and ticket sales.
-        </a>
-      </li>
-      <li>
-        <a href="projects/network-scanner.html">
-          <strong>Network Scanner</strong> – Python toolkit with Nmap, Scapy & PDF report generation.
-        </a>
-      </li>
-      <li>
-        <a href="projects/tailored-travel.html">
-          <strong>Tailored Travel</strong> – AI-powered personalized travel planning app built with Flask and React.
-        </a>
-      </li>
-    </ul>
-  </section>
+  <main>
+    <section id="about">
+      <div class="card">
+        <h2>About Me</h2>
+        <p>Computer Science and Management graduate with dual expertise in cybersecurity and full-stack development.
+            Currently pursuing python and java certifications, with a focus on cybersecurity fundamentals and web development.
+            I'm also pursuing CHIPA certification with specialization in Jamaica's Data Protection Act 2020.</p>
+        <p>Passionate about building secure, scalable backend systems while creating intuitive frontend interfaces.</p>
+      </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Kimberly Pecco • <a href="https://github.com/kimpecs?tab=repositories" target="_blank">GitHub</a></p>
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <!-- Existing Projects -->
+        <div class="project-card">
+          <h3>InvisiScan</h3>
+          <p>Python-based network scanning toolkit with automated PDF reporting</p>
+          <p><strong>Tech:</strong> Python, Nmap, WeasyPrint</p>
+          <a href="projects/network-scanner.html" class="button">View Project</a>
+        </div>
+        
+        <div class="project-card">
+          <h3>Fraud Detection System</h3>
+          <p>Isolation Forest model for identifying anomalous transactions</p>
+          <p><strong>Tech:</strong> Python, R, Machine Learning</p>
+          <a href="projects/fraud-detector.html" class="button">View Project</a>
+        </div>
+        
+        <!-- Carnival E-commerce -->
+        <div class="project-card">
+          <h3>Carnival E-commerce</h3>
+          <p>Full-stack event management and ticket sales platform</p>
+          <p><strong>Tech:</strong> Vue.js, Flask, PostgreSQL</p>
+          <a href="projects/carnival-ecommerce.html" class="button">View Project</a>
+        </div>
+        
+        <!-- Tailored Travel -->
+        <div class="project-card">
+          <h3>Tailored Travel</h3>
+          <p>AI-powered personalized travel planning application</p>
+          <p><strong>Tech:</strong> Flask, React, OpenAI API</p>
+          <a href="projects/tailored-travel.html" class="button">Coming Soon</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Core Skills</h2>
+      <div class="resume-highlights">
+        <!-- Cybersecurity Column -->
+        <div class="resume-item">
+          <h3>Cybersecurity</h3>
+          <ul>
+            <li>Network Defense</li>
+            <li>Vulnerability Assessment</li>
+            <li>Data Protection Act</li>
+            <li>Nmap/Scapy</li>
+          </ul>
+        </div>
+        
+        <!-- Data Analysis Column -->
+        <div class="resume-item">
+          <h3>Data & Backend</h3>
+          <ul>
+            <li>Python (Flask/Django)</li>
+            <li>R for Analysis</li>
+            <li>PostgreSQL/MongoDB</li>
+            <li>Postman/API Design</li>
+          </ul>
+        </div>
+        
+        <!-- Web Dev Column -->
+        <div class="resume-item">
+          <h3>Web Development</h3>
+          <ul>
+            <li>Vue.js/React</li>
+            <li>HTML/CSS/JS</li>
+            <li>RESTful APIs</li>
+            <li>Docker Deployment</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+   
+   <section id="experience">
+      <h2>Professional Experience</h2>
+      <div class="card">
+        <h3>Director of Transportation</h3>
+        <p>University of the West Indies, Mona Campus | 06/2024 - Present</p>
+        <ul>
+          <li>Lead transportation initiatives ensuring efficient campus services</li>
+          <li>Manage scheduling and continuous service improvement</li>
+        </ul>
+      </div>
+      
+      <div class="card">
+        <h3>Computer Lab Assistant</h3>
+        <p>UWI Mona Main Library | 01/2020 - 05/2023</p>
+        <ul>
+          <li>Assisted students with technology resources</li>
+          <li>Supported campus printing and ID systems</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2>Get In Touch</h2>
+    <p>Let's connect to discuss cybersecurity, data protection, Backend Developemnet  and or potential collaborations.</p>
+    <p>
+      <a href="mailto:kim.pecco2.0@gmail.com">kim.pecco2.0@gmail.com</a> | 
+      <a href="tel:18768306504">1 (876) 830-6504</a> | 
+      <a href="https://github.com/kimpecs" target="_blank">GitHub</a>
+    </p>
+    <p>© 2025 Kimberly Pecco. All rights reserved.</p>
   </footer>
 </body>
 </html>

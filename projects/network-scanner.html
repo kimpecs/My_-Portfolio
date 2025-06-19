@@ -3,56 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Network Scanner | Kimberly Pecco</title>
+  <title>InvisiScan | Kimberly Pecco</title>
   <link rel="stylesheet" href="../css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Network Scanner</h1>
-    <p class="text-gray">Python toolkit for comprehensive network analysis and reporting</p>
-    <a href="../index.html" class="back-link">
-      ← Back to Portfolio
-    </a>
+    <div class="profile-header">
+      <img src="../assets/kimberly.jpg" alt="Kimberly Pecco" class="profile-pic">
+      <div>
+        <h1>InvisiScan</h1>
+        <p>Network Scanning Toolkit with Automated Reporting</p>
+      </div>
+    </div>
+    <a href="../index.html" class="button">← Back to Portfolio</a>
   </header>
 
   <main>
-    <div class="project-card">
-      <h3>Project Overview</h3>
-      <p>A powerful network scanning toolkit that combines Nmap, Scapy, and custom reporting to provide comprehensive network analysis capabilities.</p>
+    <section class="card">
+      <h2>Project Overview</h2>
+      <p>A comprehensive Python-based toolkit for network scanning, vulnerability detection, and automated PDF report generation. Designed for cybersecurity professionals who need efficient network assessment tools.</p>
       
-      <h3>Core Capabilities</h3>
-      <ul>
-        <li>Network device discovery and mapping</li>
-        <li>Port scanning and service detection</li>
-        <li>Live packet capture and analysis</li>
-        <li>Automated PDF report generation</li>
-      </ul>
+      <div class="resume-highlights">
+        <div class="resume-item">
+          <h3>Key Features</h3>
+          <ul>
+            <li>Customizable network scan profiles</li>
+            <li>Port scanning and service detection</li>
+            <li>ICMP host discovery</li>
+            <li>Automated PDF report generation</li>
+          </ul>
+        </div>
+        
+        <div class="resume-item">
+          <h3>Technologies</h3>
+          <ul>
+            <li>Python</li>
+            <li>Nmap integration</li>
+            <li>WeasyPrint for PDFs</li>
+            <li>Multi-threading</li>
+          </ul>
+        </div>
+      </div>
       
       <a href="https://github.com/kimpecs/Network_Scanner.git" target="_blank" class="button">View on GitHub</a>
-    </div>
+    </section>
 
-    <h2>Interface & Reporting</h2>
-    <p>The intuitive interface allows for customized scans while the automated reporting saves hours of manual documentation.</p>
-    
-    <h3>Scan Configuration</h3>
-    <img src="../assets/network-scanner-ui.png" alt="Network scanner configuration interface">
-    
-    <h3>Sample Report Output</h3>
-    <img src="../assets/network-scan-report.png" alt="Network scan report example">
-
-    <div class="project-card mt-2">
-      <h3>Technical Implementation</h3>
-      <p><strong>Tools Used:</strong> Python, Nmap, Scapy, ReportLab, Threading</p>
+    <section>
+      <h2>Technical Implementation</h2>
+      <div class="card">
+        <h3>Scan Configuration Interface</h3>
+        <p>The intuitive interface allows users to customize scans based on their specific security assessment needs.</p>
+        <img src="../assets/network-scanner-ui.png" alt="InvisiScan configuration interface">
+      </div>
       
-      <h4>Key Components</h4>
+      <div class="card">
+        <h3>Automated Reporting</h3>
+        <p>Professional PDF reports are generated automatically, saving hours of manual documentation work.</p>
+        <img src="../assets/network-scan-report.png" alt="Sample network scan report">
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Development Highlights</h2>
       <ul>
-        <li>Nmap integration for comprehensive scanning</li>
-        <li>Scapy for custom packet manipulation</li>
-        <li>Multi-threading for efficient execution</li>
-        <li>PDF generation with ReportLab</li>
+        <li>Integrated Nmap's powerful scanning capabilities with Python's flexibility</li>
+        <li>Implemented threading for efficient scanning of multiple targets</li>
+        <li>Designed clean PDF templates with WeasyPrint for professional reporting</li>
+        <li>Added customizable scan profiles for different security assessment needs</li>
       </ul>
-    </div>
+    </section>
   </main>
 
   <footer>

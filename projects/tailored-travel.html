@@ -1,50 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tailored Travel | Kimberly Pecco</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Tailored Travel</h1>
-    <a href="../index.html">← Back to Portfolio</a>
+    <div class="profile-header">
+      <img src="../assets/kimberly.jpg" alt="Kimberly Pecco" class="profile-pic">
+      <div>
+        <h1>Tailored Travel</h1>
+        <p>AI-Powered Travel Planning (Coming Soon)</p>
+      </div>
+    </div>
+    <a href="../index.html" class="button">← Back to Portfolio</a>
   </header>
 
   <main>
-    <p><strong>Tools:</strong> React, Flask, OpenAI API, Google Maps API, MongoDB</p>
-    <p>An AI-powered travel planning application that creates personalized itineraries based on user preferences, budget, and travel style using machine learning recommendations.</p>
-    
-    <h2>Features</h2>
-    <ul>
-      <li>AI-generated personalized travel itineraries</li>
-      <li>Interactive map-based planning</li>
-      <li>Budget tracking and recommendations</li>
-      <li>Local experience suggestions</li>
-      <li>Travel companion matching</li>
-    </ul>
-    
-    <p><a href="https://github.com/kimpecs/tailored-travel" target="_blank">View Code on GitHub</a></p>
-    
-    <h3>Itinerary Generation</h3>
-    <img src="../assets/travel-itinerary-placeholder.png" alt="Travel Itinerary Screenshot" />
-    
-    <h3>Destination Explorer</h3>
-    <img src="../assets/travel-map-placeholder.png" alt="Interactive Map Screenshot" />
-    
-    <h2>Technical Implementation</h2>
-    <p>The application leverages several advanced technologies:</p>
-    <ul>
-      <li><strong>AI Engine:</strong> Custom prompts with OpenAI GPT for itinerary generation</li>
-      <li><strong>Geospatial Data:</strong> Integration with Google Maps and Places APIs</li>
-      <li><strong>User Profiles:</strong> MongoDB for flexible traveler preference storage</li>
-      <li><strong>Real-time Updates:</strong> Socket.io for live collaboration features</li>
-    </ul>
+    <section class="card">
+      <h2>Project Preview</h2>
+      <p>An innovative travel planning application that uses AI to create personalized itineraries based on user preferences, budget, and travel style.</p>
+      
+      <div class="resume-highlights">
+        <div class="resume-item">
+          <h3>Planned Features</h3>
+          <ul>
+            <li>AI-generated itineraries</li>
+            <li>Interactive map planning</li>
+            <li>Budget tracking</li>
+            <li>Local experience suggestions</li>
+          </ul>
+        </div>
+        
+        <div class="resume-item">
+          <h3>Proposed Tech Stack</h3>
+          <ul>
+            <li>React frontend</li>
+            <li>Flask backend</li>
+            <li>OpenAI API integration</li>
+            <li>Google Maps API</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Development Roadmap</h2>
+      <ul>
+        <li><strong>June 2025:</strong> Core Flask API development</li>
+        <li><strong>June 2025:</strong> React frontend implementation</li>
+        <li><strong>July 2025:</strong> AI recommendation engine</li>
+        <li><strong>July 2025:</strong> Beta testing phase</li>
+      </ul>
+      <p class="mt-1">This project is currently in workshopping phase. Check back later for updates!</p>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Kimberly Pecco</p>
+    <p>© 2025 Kimberly Pecco. All rights reserved.</p>
   </footer>
 </body>
 </html>

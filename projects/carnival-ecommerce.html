@@ -1,50 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carnival E-commerce | Kimberly Pecco</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Carnival E-commerce</h1>
-    <a href="../index.html">← Back to Portfolio</a>
+    <div class="profile-header">
+      <img src="../assets/kimberly.jpg" alt="Kimberly Pecco" class="profile-pic">
+      <div>
+        <h1>Carnival E-commerce</h1>
+        <p>Full-Stack Event Management Platform</p>
+      </div>
+    </div>
+    <a href="../index.html" class="button">← Back to Portfolio</a>
   </header>
 
   <main>
-    <p><strong>Tools:</strong> Vue.js, Flask, PostgreSQL, Stripe API, Docker</p>
-    <p>A full-stack event management and ticket sales platform designed for carnival and festival organizers with real-time inventory management and secure payment processing.</p>
-    
-    <h2>Key Features</h2>
-    <ul>
-      <li>Event creation and management dashboard</li>
-      <li>Real-time ticket inventory system</li>
-      <li>Secure payment processing with Stripe</li>
-      <li>Attendee management and analytics</li>
-      <li>Mobile-responsive design</li>
-    </ul>
-    
-    <p><a href="https://github.com/kimpecs/carnival-ecommerce.git" target="_blank">View Code on GitHub</a></p>
-    
-    <h3>Event Management Dashboard</h3>
-    <img src="../assets/carnival-dashboard-placeholder.png" alt="Carnival Dashboard Screenshot" />
-    
-    <h3>Ticket Purchase Flow</h3>
-    <img src="../assets/carnival-checkout-placeholder.png" alt="Checkout Process Screenshot" />
-    
-    <h2>Technical Architecture</h2>
-    <p>The application follows a modern microservices architecture:</p>
-    <ul>
-      <li><strong>Frontend:</strong> Vue.js with Vuetify for UI components</li>
-      <li><strong>Backend:</strong> Flask REST API with JWT authentication</li>
-      <li><strong>Database:</strong> PostgreSQL with Redis caching</li>
-      <li><strong>DevOps:</strong> Docker containers with CI/CD pipeline</li>
-    </ul>
+    <section class="card">
+      <h2>Project Overview</h2>
+      <p>A complete event management solution for carnival organizers featuring ticket sales, inventory management, and attendee analytics.</p>
+      
+      <div class="resume-highlights">
+        <div class="resume-item">
+          <h3>Key Features</h3>
+          <ul>
+            <li>Real-time ticket inventory</li>
+            <li>Stripe payment integration</li>
+            <li>Event management dashboard</li>
+            <li>Attendee analytics</li>
+          </ul>
+        </div>
+        
+        <div class="resume-item">
+          <h3>Full Tech Stack</h3>
+          <ul>
+            <li><strong>Frontend:</strong> Vue.js, Vuetify, Chart.js</li>
+            <li><strong>Backend:</strong> Flask, JWT Auth</li>
+            <li><strong>Database:</strong> PostgreSQL</li>
+            <li><strong>DevOps:</strong> Docker, CI/CD</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>System Screenshots</h2>
+      <div class="card">
+        <h3>Admin Dashboard</h3>
+        <p>Comprehensive event management interface with real-time analytics.</p>
+        <img src="../assets/carnival-dashboard-placeholder.png" alt="Admin Dashboard">
+      </div>
+      
+      <div class="card">
+        <h3>Checkout Flow</h3>
+        <p>Seamless ticket purchase experience with secure payment processing.</p>
+        <img src="../assets/carnival-checkout-placeholder.png" alt="Checkout Process">
+      </div>
+      
+      <div class="card">
+        <h3>Mobile Responsiveness</h3>
+        <p>Fully responsive design works across all device types.</p>
+        <img src="../assets/carnival-mobile-placeholder.png" alt="Mobile View">
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Development Notes</h2>
+      <ul>
+        <li>Implemented JWT authentication for secure API access</li>
+        <li>Designed responsive Vue components with Vuetify</li>
+        <li>Optimized PostgreSQL queries for high-volume ticket sales</li>
+        <li>Integrated Stripe payment processing with webhook verification</li>
+      </ul>
+      <a href="https://github.com/kimpecs/carnival-ecommerce" target="_blank" class="button">View on GitHub</a>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Kimberly Pecco</p>
+    <p>© 2025 Kimberly Pecco. All rights reserved.</p>
   </footer>
 </body>
 </html>
